@@ -1,0 +1,13 @@
+# Created at 2018-12-20T10:35:33.586
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2018-12-20T10:35:35.328
+Unexpected IOException with stream: 2018-12-20 10:35:35 [TestNG-test=demo suite-1] INFO  DEMO - GO TO WEBSITE
+
+

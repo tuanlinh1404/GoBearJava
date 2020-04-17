@@ -1,0 +1,17 @@
+# Created at 2019-01-22T11:15:47.468
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2019-01-22T11:16:07.473
+Unexpected IOException with stream: 2019-01-22 11:16:07 [TestNG-test=demo suite-1] INFO  DEMO - GO TO WEBSITE
+
+
+# Created at 2019-01-22T11:16:22.636
+Unexpected IOException: 8,1,bp2.TCExportPeriodRoyaltyInvoice,ExportPeriodRoyaltyInvoice(bp2.TCExportPeriodRoyaltyInvoice),null,null,null,null,TCExportPeriodRoyaltyInvoice.ExportPeriodRoyaltyInvoice:60,junit.framework.AssertionFailedError\000A\0009at bp2.TCExportPeriodRoyaltyInvoice.ExportPeriodRoyaltyInvoice(TCExportPeriodRoyaltyInvoice.java:60)\000A
+
+

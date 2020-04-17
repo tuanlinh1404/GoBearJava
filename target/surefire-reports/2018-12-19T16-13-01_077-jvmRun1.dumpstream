@@ -1,0 +1,17 @@
+# Created at 2018-12-19T16:13:47.653
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2018-12-19T16:13:52.290
+Unexpected IOException: 6,1,bp2.TCARSCreateEditDeleteSuperConUser,CreateEditDeleteSuperConUser(bp2.TCARSCreateEditDeleteSuperConUser),null,null,null
+
+
+# Created at 2018-12-19T16:13:53.013
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

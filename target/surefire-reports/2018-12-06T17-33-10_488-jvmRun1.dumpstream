@@ -1,0 +1,38 @@
+# Created at 2018-12-06T17:33:12.757
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2018-12-06T17:33:15.940
+Unexpected IOException with stream: Dec 06, 2018 5:33:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+
+# Created at 2018-12-06T17:33:29.674
+Unexpected IOException with stream: 2018-12-06 17:33:29 [main] INFO  DEMO - GO TO WEBSITE
+
+
+# Created at 2018-12-06T17:33:29.695
+Unexpected IOException: 5,1,bp2.TC001,TCEditUser(bp2.TC001),bp2.TC001,null,null
+
+
+# Created at 2018-12-06T17:33:33.695
+Unexpected IOException: 6,1,bp2.TC001,TCEditUser(bp2.TC001),null,null,null
+
+
+# Created at 2018-12-06T17:33:33.696
+Unexpected IOException: 5,1,bp2.TC001,TCSelectAR(bp2.TC001),bp2.TC001,null,null
+
+
+# Created at 2018-12-06T17:34:04.032
+Unexpected IOException: 8,1,bp2.TC001,TCSelectAR(bp2.TC001),null,Expected condition failed: waiting for element to be clickable: By.xpath: //a[text()='Login'] (tried for 30 second(s) with 500 milliseconds interval),null,Expected condition failed: waiting for element to be clickable: By.xpath: //a[text()='Login'] (tried for 30 second(s) with 500 milliseconds interval),TC001.TCSelectAR:62 \00BB Timeout Expected condition failed: waiting for element t...,org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[text()='Login'] (tried for 30 second(s) with 500 milliseconds interval)\000A\0009at bp2.TC001.TCSelectAR(TC001.java:62)\000ACaused by: org.openqa.selenium.NoSuchElementException: \000ACannot locate an element using By.xpath: //a[text()='Login']\000AFor documentation on this error\002C please visit: http://seleniumhq.org/exceptions/no_such_element.html\000ABuild info: version: '3.14.0'\002C revision: 'aacccce0'\002C time: '2018-08-02T20:19:58.91Z'\000ASystem info: host: 'VTNHUAN'\002C ip: '172.17.0.139'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.1'\000ADriver info: driver.version: unknown\000A\0009at bp2.TC001.TCSelectAR(TC001.java:62)\000A
+
+
+# Created at 2018-12-06T17:34:04.248
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

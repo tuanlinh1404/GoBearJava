@@ -1,0 +1,34 @@
+# Created at 2019-01-22T11:03:36.267
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2019-01-22T11:03:57.464
+Unexpected IOException: 6,1,bp2.TCRaiseDisputeManual,RaiseDisputeManual(bp2.TCRaiseDisputeManual),null,null,null
+
+
+# Created at 2019-01-22T11:04:04.737
+Unexpected IOException: 5,1,bp2.TCExportPeriodRoyaltyInvoice,ExportPeriodRoyaltyInvoice(bp2.TCExportPeriodRoyaltyInvoice),bp2.TCExportPeriodRoyaltyInvoice,null,null
+
+
+# Created at 2019-01-22T11:04:04.804
+Unexpected IOException with stream: TEST NAME: demo1
+
+
+# Created at 2019-01-22T11:04:04.805
+Unexpected IOException with stream: RAW: key=TMA Solutions
+
+
+# Created at 2019-01-22T11:04:04.907
+Unexpected IOException with stream: 2019-01-22 11:04:04 [TestNG-test=demo suite-1] INFO  DEMO - GET URL --- http://otrc-dev.us-east-1.elasticbeanstalk.com/#/login
+
+
+# Created at 2019-01-22T11:04:13.074
+Unexpected IOException with stream: Jan 22, 2019 11:04:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [demo suite]" parallel="methods" data-provider-thread-count="1">
+  <test thread-count="1" verbose="0" name="demo suite(failed)" parallel="methods">
+    <parameter name="waitTime" value="20"/>
+    <classes>
+      <class name="bp2.TCGoBear">
+        <methods>
+          <include name="GoBear"/>
+        </methods>
+      </class> <!-- bp2.TCGoBear -->
+    </classes>
+  </test> <!-- demo suite(failed) -->
+</suite> <!-- Failed suite [demo suite] -->

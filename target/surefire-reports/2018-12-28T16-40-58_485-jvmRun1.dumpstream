@@ -1,0 +1,21 @@
+# Created at 2018-12-28T16:41:08.247
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2018-12-28T16:41:15.915
+Unexpected IOException with stream: 2018-12-28 16:41:15 [TestNG-test=demo suite-1] INFO  DEMO - GO TO WEBSITE
+
+
+# Created at 2018-12-28T16:41:42.202
+Unexpected IOException: 8,1,bp2.TCAddArea,AddEditDeleteArea(bp2.TCAddArea),null,Index 0 out of bounds for length 0,null,Index 0 out of bounds for length 0,TCAddArea.AddEditDeleteArea:96 \00BB IndexOutOfBounds Index 0 out of bounds for le...,java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0\000A\0009at bp2.TCAddArea.AddEditDeleteArea(TCAddArea.java:96)\000A
+
+
+# Created at 2018-12-28T16:41:43.149
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+
