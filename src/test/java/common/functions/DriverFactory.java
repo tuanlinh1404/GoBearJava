@@ -1,6 +1,5 @@
 package common.functions;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 
@@ -27,7 +26,6 @@ public class DriverFactory {
 		DesiredCapabilities cap =  new DesiredCapabilities();
 		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		cap.setCapability(ChromeOptions.CAPABILITY, options);
-		//WebDriver driver = new ChromeDriver(cap);
 		
 		ReadExcel ex = new ReadExcel();
 		String remote = ex.getConfigData("Remote");

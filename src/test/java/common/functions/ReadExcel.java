@@ -12,15 +12,10 @@ import jxl.Workbook;
 import jxl.read.biff.BiffException;
 
 public class ReadExcel {
-
-	//public static final Logger logger = LogManager.getLogger("Read Data From Excel file");
 	public String dataTest = "data";
 	private Object[][] excelData = null;
 	private String testName;
-	private String tcTitle=null;
-	private String userInput=null;
 	private String rawData=null;
-	private String isRun=null;
 	private List<String[]> varArray = new ArrayList<String[]>();
 	private String[] dataArray;
 	

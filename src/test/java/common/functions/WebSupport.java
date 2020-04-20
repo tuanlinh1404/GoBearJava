@@ -1,25 +1,23 @@
 package common.functions;
 
 import java.util.Set;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import antlr.collections.List;
-
 
 public class WebSupport {
 	
 	WebDriver driver;
 	WebDriverWait wait;
 	Actions act;
+	WebSupport webSupport;
+	public Logger logger = LogManager.getLogger("DEMO");
 	
 	public WebSupport(WebDriver driver123) {
 		this.driver = driver123;
@@ -42,8 +40,6 @@ public class WebSupport {
 	}
 	
 	public void switchToPopUp() {
-		
-		//String parentWindowHandler = driver.getWindowHandle(); // Store your parent window
 		String subWindowHandler = null;
 		Set<String> handles = driver.getWindowHandles(); // get all window handles
 		 java.util.Iterator<String> iterator = handles.iterator();
@@ -51,11 +47,14 @@ public class WebSupport {
 		    subWindowHandler = iterator.next();
 		}
 		driver.switchTo().window(subWindowHandler); // switch to popup window
-		//driver.switchTo().window(parentWindowHandler);  // switch back to parent window
 	}
 	
-	
-	
+	public void navigateToURL(String URL) throws Exception{
+		logger.info("GET URL --- " + URL);
+		driver.get(URL);
+		driver.manage().window().maximize();
+		logger.info("GO TO WEBSITE");
+	}	
 	
 	public void clickOnEnter(String xpath) {
 		WebElement elm = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
@@ -100,4 +99,5 @@ public class WebSupport {
 		act.moveToElement(elm).build().perform();
 		act.dragAndDropBy(elm, xOffset, yOffset).build().perform();
 	}
+	
 }
