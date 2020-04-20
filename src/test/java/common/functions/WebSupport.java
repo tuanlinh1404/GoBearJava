@@ -4,6 +4,7 @@ import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -100,4 +101,8 @@ public class WebSupport {
 		act.dragAndDropBy(elm, xOffset, yOffset).build().perform();
 	}
 	
+	public void scrollByPixel(int x, int y) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy("+ x + "," + y + ")");
+	}
 }

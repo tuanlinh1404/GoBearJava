@@ -2211,3 +2211,5 @@
 2020-04-20 13:23:49 [TestNG-test=demo suite-1] INFO  DEMO - GO TO WEBSITE
 2020-04-20 13:28:28 [TestNG-test=demo suite-1] INFO  DEMO - GET URL --- https://www.gobear.com/ph?x_session_type=UAT
 2020-04-20 13:28:33 [TestNG-test=demo suite-1] INFO  DEMO - GO TO WEBSITE
+2020-04-20 14:04:13 [TestNG-test=demo suite-1] INFO  DEMO - GET URL --- https://www.gobear.com/ph?x_session_type=UAT
+2020-04-20 14:04:18 [TestNG-test=demo suite-1] INFO  DEMO - GO TO WEBSITE

@@ -2,7 +2,6 @@ package bp2;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
@@ -70,8 +69,7 @@ public class TCGoBear {
 
 		// Scroll down
 		Thread.sleep(3000);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,500)");
+		webSupport.scrollByPixel(0, 500);
 
 		// Sort Insurers
 		String sortBy = ex.getConfigData("SortBy");
