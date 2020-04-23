@@ -40,6 +40,51 @@ public class WebSupport {
 		elm.click();
 	}
 	
+	public void clickDropdownItem(String item) {
+		clickOnElement("//span[contains(text(), '" + item + "')]//following::link");
+	}
+	
+	public void selectTripType(String tripType) {
+		clickOnElement("//div[contains(text(),'looking for')]//button");
+		clickDropdownItem(tripType);
+	}
+	
+	public void selectTravelPlan(String travelPlan) {
+		clickOnElement("//div[@data-gb-name='traveller']//button");
+		clickDropdownItem(travelPlan);
+	}
+	
+	public void selectDestination(String destination) {
+		clickOnElement("//div[contains(text(),'going to')]//button");
+		clickDropdownItem(destination);
+	}
+	
+	public void clickOnMenu(String menuName) {
+		clickOnElement("//a[@href='#"+ menuName +"']");
+	}
+	
+	public void selectDetailsDestination(String country) {
+		clickOnElement("//div[label[contains(text(),'DESTINATION')]]//following::button");
+		clickDropdownItem(country);
+	}
+	
+	public void selectTravelDate(String dateFrom, String dateTo) {
+		clickOnElement("//div[@class='date-from']");
+		clickOnElement("//tbody//td[(text()='" + dateFrom + "' and @class!='old disabled day') and (text()='"
+				+ dateFrom + "' and @class!='new day') and (text()='" + dateFrom + "' and @class!='old day')]");
+		clickOnElement("//div[@class='date-to']");
+		clickOnElement("//tbody//td[(text()='" + dateTo + "' and @class!='old disabled day') and (text()='"
+				+ dateTo + "' and @class!='new day') and (text()='" + dateTo + "' and @class!='old day')]");
+	}
+	
+	public void selectInsurers(String insurer) {
+		clickOnElement("//label[contains(text(),'" + insurer + "')]");
+	}
+	
+	public void selectSortByOption(String sortBy) {
+		clickOnElement("//input//following::label[contains(text(),'" + sortBy + "')]");
+	}
+	
 	public void switchToPopUp() {
 		String subWindowHandler = null;
 		Set<String> handles = driver.getWindowHandles(); // get all window handles
@@ -99,6 +144,10 @@ public class WebSupport {
 		WebElement elm =  driver.findElement(By.xpath(xpath));
 		act.moveToElement(elm).build().perform();
 		act.dragAndDropBy(elm, xOffset, yOffset).build().perform();
+	}
+	
+	public void moveSliderByOffset(String slider, int xOffset, int yOffset) {
+		dragAndDropElementByOffset("//label[contains(text(),'" + slider + "')]//following-sibling::div//div[@role='slider']", xOffset, yOffset);
 	}
 	
 	public void scrollByPixel(int x, int y) {

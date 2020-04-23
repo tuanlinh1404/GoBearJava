@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="demo suite" duration-ms="25217" started-at="2020-04-20T07:04:07Z" finished-at="2020-04-20T07:04:32Z">
+  <suite name="demo suite" duration-ms="24145" started-at="2020-04-23T02:48:48Z" finished-at="2020-04-23T02:49:12Z">
     <groups>
     </groups>
-    <test name="demo suite" duration-ms="25217" started-at="2020-04-20T07:04:07Z" finished-at="2020-04-20T07:04:32Z">
+    <test name="demo suite" duration-ms="24145" started-at="2020-04-23T02:48:48Z" finished-at="2020-04-23T02:49:12Z">
       <class name="bp2.TCGoBear">
-        <test-method status="PASS" signature="GoBear()[pri:0, instance:bp2.TCGoBear@17a7f733]" name="GoBear" duration-ms="25204" started-at="2020-04-20T07:04:07Z" finished-at="2020-04-20T07:04:32Z">
+        <test-method status="PASS" signature="GoBear()[pri:0, instance:bp2.TCGoBear@17a7f733]" name="GoBear" duration-ms="24133" started-at="2020-04-23T02:48:48Z" finished-at="2020-04-23T02:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoBear -->
